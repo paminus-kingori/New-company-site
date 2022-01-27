@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+.landing-section{
+    width: 100%;
+    height: 100vh;
+    background: url("../images/african-american-woman-with-phone-laptop-cafe.jpg") center;
+    background-size:cover;
+}
+
+
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 100vh;
+    background-color: #f1f4f7;
+    overflow-y: auto;
+  }
+  
+  .mdc-toolbar {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .mk-toolbar-nav {
+    display: flex;
+    align-items: center;
+    height: 56px;
+    margin-left: 1rem;
+  }
+  @media (min-width: 600px) {
+    .mk-toolbar-nav {
+      height: 64px;
+      margin-left: 1.5rem;
+    }
+  }
+  .mk-toolbar-nav__tabs {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .mk-toolbar-nav__tabs > li {
+    display: inline-block;
+  }
+  .mk-toolbar-nav__tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 24px;
+    color: rgba(255, 255, 255, 0.87);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    transition: color 0.2s ease-out;
+  }
+  .mk-toolbar-nav__tab:hover {
+    color: #fff;
+  }
+  .mk-toolbar-nav__tab--active {
+    color: #fff;
+    font-weight: 500;
+    box-shadow: 0 -2px inset;
+  }
+  
+  .mdc-toolbar__title + .mk-toolbar-nav {
+    margin-left: 20px;
+  }
