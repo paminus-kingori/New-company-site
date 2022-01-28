@@ -9,20 +9,38 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
 </head>
 <body>
     <header class="mdc-top-app-bar mdc-top-app-bar--short">
-        <div class="mdc-top-app-bar__row">
+    <nav class="nav">
+        
+      <div class="mdc-top-app-bar__row">
           <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
             <!-- <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button">menu</button> -->
+            
+
+            <button class="menu-btn">
+             <span class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button">menu</span>
+            </button>
+
             <span class="mdc-top-app-bar__title">Wouessi</span>
+
           </section>
-          <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-center" role="toolbar">
+
+          <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-center flex-wrap links" role="toolbar">
             <!-- <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Bookmark this page">bookmark</button> -->
-            <button class="mdc-button">ABOUT</button>
-            <button class="mdc-button">SERVICES</button>
+            <a class="nav-btn" href="">ABOUT</a>
+            <a class="nav-btn" href="">SERVICES</a>
+            <a class="nav-btn" href="">CASE STUDIES</a>
+            <a class="nav-btn" href="">PRICING</a>
+            <a class="nav-btn" href="">BLOG</a>
+            <a class="nav-btn" href="">CONTACT</a>
+          
           </section>
-        </div>
+      </div>
+
+    </nav>
       </header>
       <main class="mdc-top-app-bar--short-fixed-adjust">
         <section class="landing-section">
@@ -36,5 +54,6 @@
     </main>
     
     <script src="app.js"></script>
+    <script src="js/nav.js"></script>
 </body>
 </html>
