@@ -1,0 +1,91 @@
+
+  /* nav styles  */
+  header{
+    padding: $SectionPadding;
+  }
+  .nav-btn{
+    color: #fff;
+  }
+  .links{
+    flex-grow: 0.2;
+  }
+  .menu-btn{
+    background: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 14px;
+    place-items: center;
+    cursor: pointer;
+    display: none;
+    color: white;
+}
+.admin-drop .icon{
+  width: 20px;
+  height: 20px;
+}
+.links a{
+  color: white;
+    margin: 0 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+    &:hover{
+      color:$purpleColor;
+    }
+}
+.logo{
+    width: 50px;
+    height: 33px;
+}
+.nav-icon{
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+
+  /* responsiveness  */
+@media screen and (max-width: 570px) {
+  .links{
+      display: none;
+      position: absolute;
+  top: 53px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background: #000000c9;
+  backdrop-filter: blur(4px);
+  max-height: 90vh;
+  overflow-y: auto;
+  }
+  .link-dropdown{
+    top: 32px;
+  }
+  .filter-column{
+    min-height: unset;
+    border-right: unset;
+    border-bottom: 2px solid #D0D0D06B;
+    padding-bottom: 5px;
+  }
+  .show{
+  display: grid;
+  animation: moveDown 0.3s cubic-bezier(0.71, 0.21, 0.55, 0.93) forwards;
+  }
+  .menu-btn{
+      display: flex;
+  }
+  .links a{
+      margin: 20px 0;
+  }
+  .admin-drop{
+    border-top: 2px dashed var(--orangeColor);
+    top: unset;
+    right: unset;
+    margin-top: 5px;
+    transform: unset;
+    grid-row-gap: unset;
+    /* background: unset; */
+    padding: 10px;
+    position: relative;
+  }
+}

@@ -1,0 +1,289 @@
+@font-face {
+  font-family: aaltoFont;
+  src: url(../Aalto-Sans/Demo_Fonts/Fontspring-DEMO-aaltosansessential-regular.otf);
+}
+
+@font-face {
+  font-family: aaltoBold;
+  src: url(../Aalto-Sans/Demo_Fonts/Fontspring-DEMO-aaltosansessential-bold.otf);
+}
+
+/* nav styles  */
+header {
+  padding: 1rem 4rem;
+}
+
+.nav-btn {
+  color: #fff;
+}
+
+.links {
+  -webkit-box-flex: 0.2;
+      -ms-flex-positive: 0.2;
+          flex-grow: 0.2;
+}
+
+.menu-btn {
+  background: transparent;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 14px;
+  place-items: center;
+  cursor: pointer;
+  display: none;
+  color: white;
+}
+
+.admin-drop .icon {
+  width: 20px;
+  height: 20px;
+}
+
+.links a {
+  color: white;
+  margin: 0 10px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.links a:hover {
+  color: #353790;
+}
+
+.logo {
+  width: 50px;
+  height: 33px;
+}
+
+.nav-icon {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+}
+
+/* responsiveness  */
+@media screen and (max-width: 570px) {
+  .links {
+    display: none;
+    position: absolute;
+    top: 53px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background: #000000c9;
+    -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+  .link-dropdown {
+    top: 32px;
+  }
+  .filter-column {
+    min-height: unset;
+    border-right: unset;
+    border-bottom: 2px solid #D0D0D06B;
+    padding-bottom: 5px;
+  }
+  .show {
+    display: -ms-grid;
+    display: grid;
+    -webkit-animation: moveDown 0.3s cubic-bezier(0.71, 0.21, 0.55, 0.93) forwards;
+            animation: moveDown 0.3s cubic-bezier(0.71, 0.21, 0.55, 0.93) forwards;
+  }
+  .menu-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .links a {
+    margin: 20px 0;
+  }
+  .admin-drop {
+    border-top: 2px dashed var(--orangeColor);
+    top: unset;
+    right: unset;
+    margin-top: 5px;
+    -webkit-transform: unset;
+            transform: unset;
+    grid-row-gap: unset;
+    /* background: unset; */
+    padding: 10px;
+    position: relative;
+  }
+}
+
+* {
+  font-family: aaltoFont,sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.landing-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 4rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, right top, from(#00000012), to(#00000024)), url(../images/african-american-woman-with-phone-laptop-cafe.jpg) center;
+  background: linear-gradient(to right, #00000012, #00000024), url(../images/african-american-woman-with-phone-laptop-cafe.jpg) center;
+  background-size: cover;
+  color: #ffffff;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.landing-section .welcome {
+  text-transform: uppercase;
+  font-size: 22px;
+  text-shadow: 1px 2px 4px #00000082;
+}
+
+.landing-section .explanation {
+  text-shadow: 1px 2px 4px #00000082;
+  font-family: aaltoBold,sans-serif;
+  font-size: 48px;
+  max-width: 420px;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+}
+
+.landing-section .request-btn {
+  color: #F8991D;
+  padding: 14px;
+  border-radius: 0px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  font-weight: 600;
+  border: 2px solid #F8991D;
+}
+
+.landing-section .arrow-icon {
+  width: 32px;
+  height: auto;
+  margin: 2rem 0;
+}
+
+.mdc-top-app-bar {
+  background-color: unset;
+}
+
+.mdc-button {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  height: 100vh;
+  background-color: #f1f4f7;
+  overflow-y: auto;
+}
+
+.mdc-toolbar {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.mk-toolbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 56px;
+  margin-left: 1rem;
+}
+
+@media (min-width: 600px) {
+  .mk-toolbar-nav {
+    height: 64px;
+    margin-left: 1.5rem;
+  }
+}
+
+.mk-toolbar-nav__tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.mk-toolbar-nav__tabs > li {
+  display: inline-block;
+}
+
+.mk-toolbar-nav__tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  padding: 0 24px;
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+.mk-toolbar-nav__tab:hover {
+  color: #fff;
+}
+
+.mk-toolbar-nav__tab--active {
+  color: #fff;
+  font-weight: 500;
+  -webkit-box-shadow: 0 -2px inset;
+          box-shadow: 0 -2px inset;
+}
+
+.mdc-toolbar__title + .mk-toolbar-nav {
+  margin-left: 20px;
+}
+/*# sourceMappingURL=newStyle.css.map */

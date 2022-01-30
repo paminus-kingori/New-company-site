@@ -1,0 +1,141 @@
+$SectionPadding: 1rem 4rem;
+$whiteText: #ffffff;
+$orangeColor: #F8991D;
+$purpleColor: #353790;
+$btnPadding: 14px;
+
+@font-face {
+    font-family: aaltoFont;
+    src: url(../Aalto-Sans/Demo_Fonts/Fontspring-DEMO-aaltosansessential-regular.otf);
+  }
+@font-face {
+    font-family: aaltoBold;
+    src: url(../Aalto-Sans/Demo_Fonts/Fontspring-DEMO-aaltosansessential-bold.otf);
+}
+
+@import "nav";
+
+@mixin flexCenter($direction,$wrap){
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+*{
+    font-family: aaltoFont,sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+.landing-section{
+    @include flexCenter(column,wrap);
+    padding: $SectionPadding;
+    align-items: flex-start;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to right, #00000012, #00000024), url(../images/african-american-woman-with-phone-laptop-cafe.jpg) center;
+    background-size: cover;
+    color: $whiteText;
+    justify-content: flex-end;
+    .welcome{
+        text-transform: uppercase;
+        font-size: 22px;
+        text-shadow: 1px 2px 4px #00000082;
+        // font-weight: 700;
+    }
+    .explanation{
+        text-shadow: 1px 2px 4px #00000082;
+        font-family: aaltoBold,sans-serif;
+        font-size: 48px;
+        max-width: 420px;
+        margin-bottom: 3rem;
+        margin-top: 1rem;
+    }
+    .request-btn{
+        color: $orangeColor;
+        padding:$btnPadding;
+        border-radius: 0px;
+        height: max-content;
+        font-weight: 600;
+        border: 2px solid $orangeColor;
+    }
+    .arrow-icon{    
+        width: 32px;
+        height: auto;
+        margin: 2rem 0;
+    }
+}
+.mdc-top-app-bar{
+    background-color: unset;
+}
+.mdc-button{width:max-content;}
+
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 100vh;
+    background-color: #f1f4f7;
+    overflow-y: auto;
+  }
+  
+  .mdc-toolbar {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .mk-toolbar-nav {
+    display: flex;
+    align-items: center;
+    height: 56px;
+    margin-left: 1rem;
+  }
+
+
+
+
+  @media (min-width: 600px) {
+    .mk-toolbar-nav {
+      height: 64px;
+      margin-left: 1.5rem;
+    }
+  }
+  .mk-toolbar-nav__tabs {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .mk-toolbar-nav__tabs > li {
+    display: inline-block;
+  }
+  .mk-toolbar-nav__tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 24px;
+    color: rgba(255, 255, 255, 0.87);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    transition: color 0.2s ease-out;
+  }
+  .mk-toolbar-nav__tab:hover {
+    color: #fff;
+  }
+  .mk-toolbar-nav__tab--active {
+    color: #fff;
+    font-weight: 500;
+    box-shadow: 0 -2px inset;
+  }
+  
+  .mdc-toolbar__title + .mk-toolbar-nav {
+    margin-left: 20px;
+  }
