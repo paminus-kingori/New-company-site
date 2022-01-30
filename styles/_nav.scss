@@ -7,7 +7,8 @@
     color: #fff;
   }
   .links{
-    flex-grow: 0.2;
+    flex-grow: 0.9;
+    justify-content:space-evenly;
   }
   .menu-btn{
     background: transparent;
@@ -43,6 +44,12 @@
     height: 20px;
     margin: 5px;
 }
+.nav-sect{
+  flex-grow: 0.5;
+}
+
+
+
 
   /* responsiveness  */
 @media screen and (max-width: 570px) {

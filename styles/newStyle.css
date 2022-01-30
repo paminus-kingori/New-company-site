@@ -18,9 +18,12 @@ header {
 }
 
 .links {
-  -webkit-box-flex: 0.2;
-      -ms-flex-positive: 0.2;
-          flex-grow: 0.2;
+  -webkit-box-flex: 0.9;
+      -ms-flex-positive: 0.9;
+          flex-grow: 0.9;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .menu-btn {
@@ -61,6 +64,12 @@ header {
   width: 20px;
   height: 20px;
   margin: 5px;
+}
+
+.nav-sect {
+  -webkit-box-flex: 0.5;
+      -ms-flex-positive: 0.5;
+          flex-grow: 0.5;
 }
 
 /* responsiveness  */
@@ -115,6 +124,7 @@ header {
   }
 }
 
+@use "@material/typography/mdc-typography";
 * {
   font-family: aaltoFont,sans-serif;
   -webkit-box-sizing: border-box;
@@ -196,6 +206,12 @@ header {
   width: max-content;
 }
 
+.center-div {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .app {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -228,11 +244,57 @@ header {
   margin-left: 1rem;
 }
 
-@media (min-width: 600px) {
-  .mk-toolbar-nav {
-    height: 64px;
-    margin-left: 1.5rem;
-  }
+.analysis-btn {
+  background-color: #ffffff;
+}
+
+.analysis-btn span {
+  color: #000000;
+  font-weight: bold;
+}
+
+.quote-btn {
+  background-color: #F8991D;
+}
+
+.quote-btn span {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.other-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 0.3;
+      -ms-flex-positive: 0.3;
+          flex-grow: 0.3;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.other-links button {
+  margin: 0 4px;
+}
+
+.other-links .down-icon {
+  color: #ffffff;
+}
+
+.icon {
+  width: 24px;
 }
 
 .mk-toolbar-nav__tabs {
@@ -285,5 +347,106 @@ header {
 
 .mdc-toolbar__title + .mk-toolbar-nav {
   margin-left: 20px;
+}
+
+.dark-section {
+  background-color: #000000;
+  padding: 1rem 4rem;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.text-container {
+  max-width: 460px;
+  min-height: 350px;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: space-evenly;
+      align-content: space-evenly;
+}
+
+.mdc-title {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.text-desc {
+  font-size: 26px;
+}
+
+.image-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.image-container span {
+  position: absolute;
+}
+
+.image-container h2 {
+  z-index: 3;
+  position: absolute;
+  text-align: center;
+}
+
+.image-container .img {
+  border-radius: 20px;
+  height: 350px;
+  width: auto;
+  max-width: 310px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  position: relative;
+}
+
+.image-container::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  background-color: #00000059;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+@media (min-width: 600px) {
+  .mk-toolbar-nav {
+    height: 64px;
+    margin-left: 1.5rem;
+  }
 }
 /*# sourceMappingURL=newStyle.css.map */

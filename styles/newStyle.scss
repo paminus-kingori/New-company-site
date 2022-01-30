@@ -1,9 +1,10 @@
 $SectionPadding: 1rem 4rem;
 $whiteText: #ffffff;
+$blackText: #000000;
 $orangeColor: #F8991D;
 $purpleColor: #353790;
 $btnPadding: 14px;
-
+// $mdc-theme-primary: #F8991D;
 @font-face {
     font-family: aaltoFont;
     src: url(../Aalto-Sans/Demo_Fonts/Fontspring-DEMO-aaltosansessential-regular.otf);
@@ -14,6 +15,8 @@ $btnPadding: 14px;
 }
 
 @import "nav";
+@use "@material/typography/mdc-typography";
+
 
 @mixin flexCenter($direction,$wrap){
     display: flex;
@@ -72,7 +75,7 @@ $btnPadding: 14px;
     background-color: unset;
 }
 .mdc-button{width:max-content;}
-
+.center-div{    align-items: center;}
 .app {
     display: flex;
     justify-content: center;
@@ -95,15 +98,28 @@ $btnPadding: 14px;
     margin-left: 1rem;
   }
 
-
-
-
-  @media (min-width: 600px) {
-    .mk-toolbar-nav {
-      height: 64px;
-      margin-left: 1.5rem;
-    }
+.analysis-btn{
+  background-color: $whiteText;
+  span{color: $blackText; font-weight: bold;}
+}
+.quote-btn{
+  background-color: $orangeColor;
+  span{color: $whiteText; font-weight: bold;}
+}
+.other-links{
+  @include flexCenter(row,wrap);
+  flex-grow: 0.3;
+  justify-content:space-around;
+  button{
+    margin: 0 4px;
   }
+  .down-icon{
+    color:$whiteText;
+  }
+}
+.icon{
+  width:24px;
+}
   .mk-toolbar-nav__tabs {
     display: flex;
     justify-content: center;
@@ -138,4 +154,63 @@ $btnPadding: 14px;
   
   .mdc-toolbar__title + .mk-toolbar-nav {
     margin-left: 20px;
+  }
+
+.dark-section{
+  background-color: $blackText;
+  padding: $SectionPadding;
+  color:$whiteText;
+  @include flexCenter(row,wrap);
+  justify-content:space-between;
+}
+.text-container{
+max-width:460px;
+min-height: 350px;
+display: grid;
+align-content: space-evenly;
+
+}
+.mdc-title{
+  font-size:32px;
+  font-weight: 600;
+}
+.text-desc{
+  font-size: 26px;
+}
+.image-container{
+  position: relative;
+  @include flexCenter(row,wrap);
+  span{position: absolute;}
+  h2{
+    z-index: 3;
+    position: absolute;
+    text-align: center;
+  }
+  .img{    
+    border-radius: 20px;
+    height: 350px;
+    width: auto;
+    max-width: 310px;
+    object-fit:cover;
+    object-position: center;
+    position: relative;
+  }
+  &::before{
+    content:"";
+    position: absolute;
+    z-index: 1;
+    background-color:#00000059;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+}
+
+
+  @media (min-width: 600px) {
+    .mk-toolbar-nav {
+      height: 64px;
+      margin-left: 1.5rem;
+    }
   }
