@@ -3,7 +3,8 @@
     "@material/button": "^13.0.0",
     "@material/icon-button": "^13.0.0",
     "@material/textfield": "^13.0.0",
-    "@material/top-app-bar": "^13.0.0"
+    "@material/top-app-bar": "^13.0.0",
+    "material-design-icons": "^3.0.1"
   },
   "devDependencies": {
     "webpack": "^5.67.0"

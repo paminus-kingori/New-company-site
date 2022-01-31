@@ -13,10 +13,21 @@ $btnPadding: 14px;
     font-family: aaltoBold;
     src: url(../Aalto-Sans/Demo_Fonts/Fontspring-DEMO-aaltosansessential-bold.otf);
 }
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
 
 @import "nav";
 @use "@material/typography/mdc-typography";
-
+// @import "~material-design-icons/iconfont/material-icons.css";
 
 @mixin flexCenter($direction,$wrap){
     display: flex;
@@ -31,6 +42,38 @@ $btnPadding: 14px;
     box-sizing: border-box;
     margin: 0;
     padding:0;
+}
+
+
+.material-icons, .material-icons-outlined{
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.mdc-section{
+  @include flexCenter(row,wrap);
+  justify-content:space-between;
+  padding:$SectionPadding;
 }
 
 .landing-section{
@@ -156,6 +199,8 @@ $btnPadding: 14px;
     margin-left: 20px;
   }
 
+
+  // second section 
 .dark-section{
   background-color: $blackText;
   padding: $SectionPadding;
@@ -165,7 +210,7 @@ $btnPadding: 14px;
 }
 .text-container{
 max-width:460px;
-min-height: 350px;
+min-height: 290px;
 display: grid;
 align-content: space-evenly;
 
@@ -176,6 +221,7 @@ align-content: space-evenly;
 }
 .text-desc{
   font-size: 26px;
+  @include flexCenter(row,nowrap);
 }
 .image-container{
   position: relative;
@@ -205,6 +251,57 @@ align-content: space-evenly;
     left: 0;
     top: 0;
   }
+}
+i{
+  font-family:sans-serif;
+}
+// third section 
+.third-section{
+  .material-icons{
+    font-size: 50px;
+  }
+  padding-top: 6rem;
+  align-items: flex-start;
+  .image-container{
+    &::before{
+      content:"";
+      background-color:unset;
+    }
+    .img{
+      border-radius: 0;
+      max-width: 450px;
+    }
+  }
+}
+.purple-title{
+  color: $purpleColor;
+  font-weight: 600;
+  width: max-content;
+}
+
+//fourth section
+.fourth-section{
+  background-color:$purpleColor;
+  color: $whiteText;
+  .function-card{
+    display: grid;
+    max-width: 390px;
+    margin: 2rem 0;
+    .material-icons-outlined{
+      color:$purpleColor; 
+      font-size: 32px;
+    }
+    .img{
+      background: $whiteText;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      @include flexCenter(row,nowrap);
+      justify-self: center;
+    }
+  }
+  .mdc-title{margin: 10px 0;}
+  .text-desc{ font-size: 24px;}
 }
 
 

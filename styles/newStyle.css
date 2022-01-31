@@ -8,6 +8,15 @@
   src: url(../Aalto-Sans/Demo_Fonts/Fontspring-DEMO-aaltosansessential-bold.otf);
 }
 
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot);
+  /* For IE6-8 */
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"), url(https://example.com/MaterialIcons-Regular.woff) format("woff"), url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
+}
+
 /* nav styles  */
 header {
   padding: 1rem 4rem;
@@ -131,6 +140,52 @@ header {
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.material-icons, .material-icons-outlined {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  -webkit-font-feature-settings: 'liga';
+          font-feature-settings: 'liga';
+}
+
+.mdc-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 4rem;
 }
 
 .landing-section {
@@ -375,7 +430,7 @@ header {
 
 .text-container {
   max-width: 460px;
-  min-height: 350px;
+  min-height: 290px;
   display: -ms-grid;
   display: grid;
   -ms-flex-line-pack: space-evenly;
@@ -389,6 +444,21 @@ header {
 
 .text-desc {
   font-size: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .image-container {
@@ -441,6 +511,87 @@ header {
   height: 100%;
   left: 0;
   top: 0;
+}
+
+i {
+  font-family: sans-serif;
+}
+
+.third-section {
+  padding-top: 6rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.third-section .material-icons {
+  font-size: 50px;
+}
+
+.third-section .image-container::before {
+  content: "";
+  background-color: unset;
+}
+
+.third-section .image-container .img {
+  border-radius: 0;
+  max-width: 450px;
+}
+
+.purple-title {
+  color: #353790;
+  font-weight: 600;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.fourth-section {
+  background-color: #353790;
+  color: #ffffff;
+}
+
+.fourth-section .function-card {
+  display: -ms-grid;
+  display: grid;
+  max-width: 390px;
+  margin: 2rem 0;
+}
+
+.fourth-section .function-card .material-icons-outlined {
+  color: #353790;
+  font-size: 32px;
+}
+
+.fourth-section .function-card .img {
+  background: #ffffff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-self: center;
+}
+
+.fourth-section .mdc-title {
+  margin: 10px 0;
+}
+
+.fourth-section .text-desc {
+  font-size: 24px;
 }
 
 @media (min-width: 600px) {
