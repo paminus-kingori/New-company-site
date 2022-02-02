@@ -5,32 +5,443 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wouessi Digital</title>
-    <link rel="stylesheet" href="bundle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet"  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Aalto-Sans-Font-Family/Demo_Fonts/Fontspring-DEMO-aaltosansessentialalt-regular.otf">
+    <link rel="stylesheet" href="styles/newStyle.css">
 </head>
-<body>
-    <header class="mdc-top-app-bar">
-        <div class="mdc-top-app-bar__row">
-          <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-            <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button" aria-label="Open navigation menu">menu</button>
-            <span class="mdc-top-app-bar__title">Page title</span>
+<body class="body">
+    <header class="mdc-top-app-bar mdc-top-app-bar--short nav">
+    <nav class="">
+        
+      <div class="mdc-top-app-bar__row center-div">
+          <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start nav-sect">
+            
+
+            <button class="menu-btn">
+             <span class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button">menu</span>
+            </button>
+
+            <span class="mdc-top-app-bar__title">Wouessi</span>
+
           </section>
-          <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
-            <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Favorite">favorite</button>
-            <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Search">search</button>
-            <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Options">more_vert</button>
+
+          <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-center flex-wrap links" role="toolbar">
+            <!-- <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Bookmark this page">bookmark</button> -->
+            <a class="nav-btn" href="">ABOUT</a>
+            <a class="nav-btn" href="">SERVICES</a>
+            <a class="nav-btn" href="">CASE STUDIES</a>
+            <a class="nav-btn" href="">PRICING</a>
+            <a class="nav-btn" href="">BLOG</a>
+            <a class="nav-btn" href="">CONTACT</a>
           </section>
-        </div>
+
+          <section class="other-links">
+            
+            <button class="mdc-button quote-btn">
+              <span class="mdc-button__label">Get a quote</span>
+            </button>
+
+            <button class="mdc-button analysis-btn">
+              <span class="mdc-button__label">Free analysis</span>
+            </button>
+
+            <button class="mdc-button">
+              <span class="mdc-button__label">
+                <img src="icons/usa-svgrepo-com.svg" alt="english" class="icon">
+              </span>
+              <span class="material-icons down-icon">arrow_drop_down</span>
+            </button>
+          </section>
+      </div>
+
+    </nav>
       </header>
-    <main>
-        <section class="landing-sestion">
-          <label class="mdc-text-field mdc-text-field--filled">
-            <span class="mdc-text-field__ripple"></span>
-            <span class="mdc-floating-label" id="my-label-id">Hint text</span>
-            <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
-            <span class="mdc-line-ripple"></span>
-          </label>
+      <main class="">
+        <section class="landing-section">
+          <div class="landing_text">
+            <div class="welcome">
+              Welcome to Wouessi
+            </div>
+            <h1 class="explanation">
+              let's transform your 
+              business ideas into
+              a long-lasting Brand
+            </h1>
+          </div>
+            <button class="mdc-button mdc-button--outlined request-btn">
+                <span class="mdc-button__ripple"></span>
+                <span class="mdc-button__label">Request Consultation</span>
+            </button>
+
+            <img src="icons/arrow_downward.svg" alt="more" class="icon arrow-icon">
+        </section>
+
+        <section class="mdc-section dark-section">
+          <div class="text-container">
+            <h1 class="mdc-title">
+              We are a Brand Strategy Design Consultancy Agency.
+            </h1>
+            <p class="text-desc">
+              We help businesses grow, launch products, and build enduring
+              relationships with their communities.
+            </p>
+          </div>
+
+          <div class="image-container">
+            <img src="images/aerial-view-businessman-using-computer-laptop.jpg" alt="see our work" class="img">
+            <h2>See our work <br>
+            <!-- <span class="material-icons-outlined">play_circle_filled</span> -->
+            <img src="icons/play_circle_filled_black_24dp.svg" alt="view" class="icon">
+          </h2>
+
+          </div>
+        </section>
+        
+        <section class="mdc-section third-section">
+          <div class="text-container">
+            <p class="text-desc purple-title">
+              <i class = "material-icons material-icons-outlined">
+                arrow_right_alt
+              </i>
+              What we do
+            </p>
+            <h1 class="mdc-title">
+              We offer a Full Range of Digital Marketing Services
+            </h1>
+            <p class="text-desc">
+              What makes a company great? That's simple.
+            </p>
+          </div>
+
+          <div class="image-container">
+            <img src="images/diverse-employees-listening-female-manager-woman-speaking-group-meeting-african-american.jpg" alt="what we do" class="img">
+          </h2>
+
+          </div>
+        </section>
+
+        <section class="mdc-section fourth-section">
+          <div class="function-card">
+            <img src="" alt="">
+            
+            <h1 class="mdc-title">
+              Local Search Strategy
+            </h1>
+            <p class="text-desc">
+              Small businesses with a local physical address are reliant on local SEO to grow their business and help expose them.
+            </p>
+          </div>
+
+          <div class="function-card">
+            <img src="" alt="">
+            <h1 class="mdc-title">
+              Map Search Optimization
+            </h1>
+            <p class="text-desc">
+              Small businesses with a local physical address are reliant on local SEO to grow their business and help expose them.
+            </p>
+          </div>
+
+          <div class="function-card">
+            <img src="" alt="">
+            <h1 class="mdc-title">
+              Link Building & Content
+            </h1>
+            <p class="text-desc">
+              Small businesses with a local physical address are reliant on local SEO to grow their business and help expose them.
+            </p>
+          </div>
+
+          <div class="function-card">
+            <img src="" alt="">
+            <h1 class="mdc-title">
+              Paid Search Advertising
+            </h1>
+            <p class="text-desc">
+              Small businesses with a local physical address are reliant on local SEO to grow their business and help expose them.
+            </p>
+          </div>
+
+          <div class="function-card">
+            <div class="img">
+              <span class="material-icons-outlined">
+                brush
+                </span>
+            </div>
+            
+
+            <h1 class="mdc-title">
+              Custom Website Design
+            </h1>
+            <p class="text-desc">
+              Small businesses with a local physical address are reliant on local SEO to grow their business and help expose them.
+            </p>
+          </div>
+
+          <div class="function-card">
+            <img src="" alt="">
+            <h1 class="mdc-title">
+              Custom Email Design
+            </h1>
+            <p class="text-desc">
+              Small businesses with a local physical address are reliant on local SEO to grow their business and help expose them.
+            </p>
+          </div>
+        </section>
+
+        <section class="mdc-section fifth-section">
+          <div class="seo-div">
+            <h1 class="mdc-title mdc-headline">
+              Your SEO Score?
+            </h1>
+            <p class="text-desc">
+              Check your website's SEO problems for free!
+            </p>
+            <div class="site-inputs">
+              <label class="mdc-text-field mdc-text-field--filled">
+                <span class="mdc-text-field__ripple"></span>
+                <span class="mdc-floating-label" id="my-label-id">Type in your website url</span>
+                <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
+                <span class="mdc-line-ripple"></span>
+              </label>
+
+              <div class="mdc-text-field mdc-text-field2 mdc-text-field--filled">
+                <span class="mdc-text-field__ripple"></span>
+                <span class="mdc-floating-label" id="my-label-id">Your Email</span>
+                <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
+                <span class="mdc-line-ripple"></span>
+              </div>
+            
+            </div>
+            <button class="mdc-button check-btn">
+              <span class="mdc-button__label"> Check up!</span>
+            </button>
+          </div>
+        </section>
+
+        <section class="mdc-section sixth-section">
+          <p class="text-desc white-title">
+            <i class = "material-icons material-icons-outlined">
+              arrow_right_alt
+            </i>
+            Our Services
+          </p>
+
+          <h1 class="mdc-title mdc-heading1">
+            We provide the Most Exclusive
+          </h1>
+            <section class="services">
+              <div class="function-card">
+                <img src="" alt="">
+                
+                <h1 class="mdc-title">
+                 Design
+                </h1>
+                <p class="text-desc">
+                  Small businesses with a local physical address are reliant on local SEO to grow their business and help expose them.
+                </p>
+                <i class = "material-icons material-icons-outlined">
+                  arrow_right_alt
+                </i>
+              </div>
+
+              <div class="function-card">
+                <img src="" alt="">
+                
+                <h1 class="mdc-title">
+                 Design
+                </h1>
+                <p class="text-desc">
+                  Small businesses with a local physical address are reliant on local SEO to grow their business and help expose them.
+                </p>
+                <i class = "material-icons material-icons-outlined">
+                  arrow_right_alt
+                </i>
+              </div>
+
+              <div class="function-card">
+                <img src="" alt="">
+                
+                <h1 class="mdc-title">
+                 Design
+                </h1>
+                <p class="text-desc">
+                  Small businesses with a local physical address are reliant on local SEO to grow their business and help expose them.
+                </p>
+                <i class = "material-icons material-icons-outlined">
+                  arrow_right_alt
+                </i>
+              </div>
+
+              <div class="function-card">
+                <img src="" alt="">
+                
+                <h1 class="mdc-title">
+                 Design
+                </h1>
+                <p class="text-desc">
+                  Small businesses with a local physical address are reliant on local SEO to grow their business and help expose them.
+                </p>
+                <i class = "material-icons material-icons-outlined">
+                  arrow_right_alt
+                </i>
+              </div>
+
+              <div class="function-card">
+                <img src="" alt="">
+                
+                <h1 class="mdc-title">
+                 Design
+                </h1>
+                <p class="text-desc">
+                  Small businesses with a local physical address are reliant on local SEO to grow their business and help expose them.
+                </p>
+                <i class = "material-icons material-icons-outlined">
+                  arrow_right_alt
+                </i>
+              </div>
+
+              <div class="function-card">
+                <img src="" alt="">
+                
+                <h1 class="mdc-title">
+                 Design
+                </h1>
+                <p class="text-desc">
+                  Small businesses with a local physical address are reliant on local SEO to grow their business and help expose them.
+                </p>
+                <i class = "material-icons material-icons-outlined">
+                  arrow_right_alt
+                </i>
+              </div>
+            </section>
+        </section>
+
+        <section class="mdc-section seventh-section">
+          <p class="text-desc white-title">
+            <i class = "material-icons material-icons-outlined">
+              arrow_right_alt
+            </i>
+            Our Impressive Portfolio
+          </p>
+
+          <h1 class="mdc-title mdc-heading1">
+            Our work is to deliver remarkable
+            experiences and superior results for our clients
+          </h1>
+
+                    <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="images/3. afrolifestyle.com.png" alt="our services">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/1.aldelia.com.png" alt="our services">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/2.rondol.com.png" alt="our services">
+              </div>
+              
+              <div class="swiper-slide">
+                <img src="images/4. kepler.org.png" alt="our services">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/5. leaderpol.ca.png" alt="our services">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/6. kasiinsight.com.png" alt="our services">
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+
+          </div>
+
+          <button class="mdc-button more-btn">
+            <span class="mdc-button__label"> View More </span>
+          </button>
+
+          <section class="mdc-section reviews-section">
+            <div class="review-card">
+              <img src="icons/1200px-CrunchBase.svg.png" alt="crunchbase" class="logo">
+              <p class="text-desc orange-title">
+                <i class = "material-icons material-icons-outlined">
+                  arrow_right_alt
+                </i>
+                See reviews
+              </p>
+            </div>
+            <div class="review-card">
+              <img src="icons/1200px-CrunchBase.svg.png" alt="crunchbase" class="logo">
+              <p class="text-desc orange-title">
+                <i class = "material-icons material-icons-outlined">
+                  arrow_right_alt
+                </i>
+                See reviews
+              </p>
+            </div>
+            <div class="review-card">
+              <img src="icons/1200px-CrunchBase.svg.png" alt="crunchbase" class="logo">
+              <p class="text-desc orange-title">
+                <i class = "material-icons material-icons-outlined">
+                  arrow_right_alt
+                </i>
+                See reviews
+              </p>
+            </div>
+            <div class="review-card">
+              <img src="icons/1200px-CrunchBase.svg.png" alt="crunchbase" class="logo">
+              <p class="text-desc orange-title">
+                <i class = "material-icons material-icons-outlined">
+                  arrow_right_alt
+                </i>
+                See reviews
+              </p>
+            </div>
+          </section>
         </section>
     </main>
+    
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      mdc.textField.MDCTextField.attachTo(document.querySelector('.mdc-text-field'));
+      mdc.textField.MDCTextField.attachTo(document.querySelector('.mdc-text-field2'));
+
+            const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        slidesPerView: 2,
+        spaceBetween: 3,
+
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+
+        // Navigation arrows
+        // navigation: {
+        //   nextEl: '.swiper-button-next',
+        //   prevEl: '.swiper-button-prev',
+        // },
+
+        
+      });
+    </script>
+    
+    <!-- <script src="app.js"></script> -->
+    <script src="js/nav.js"></script>
 </body>
-<script src="app.js"></script>
 </html>

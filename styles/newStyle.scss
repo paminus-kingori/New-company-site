@@ -1,4 +1,4 @@
-// @use "@material/typography/mdc-typography";
+@use "@material/typography/mdc-typography";
 @use "@material/floating-label/mdc-floating-label";
 @use "@material/line-ripple/mdc-line-ripple";
 @use "@material/notched-outline/mdc-notched-outline";
@@ -284,6 +284,7 @@ i{
   color: $purpleColor;
   font-weight: 600;
   width: max-content;
+  margin: 2rem 0;
 }
 
 //fourth section
@@ -385,7 +386,7 @@ i{
     @include flexCenter(row,wrap);
   }
   .function-card{
-    max-width: 225px;
+    max-width: 224px;
     border-top: 2px solid white;
     border-right: 2px solid white;
     padding: 3rem 1rem;
@@ -427,7 +428,7 @@ i{
   }
   .more-btn{
     border-radius: 0;
-    padding: 10px 50px;
+    padding: 24px 50px;
     color:$whiteText;
     margin: auto;
     background: $purpleColor;
@@ -454,6 +455,84 @@ i{
     }
   }
 }
+
+.eigth-section{
+  @extend .fifth-section;
+  background:url(../images/black-men-cafe-have-business.jpg) center;
+  background-size:cover ;
+  .site-inputs{
+    
+  .mdc-text-field,.mdc-text-field2{
+    border-radius: 0;
+    margin-right: 6px;
+    border-right: unset;
+  }
+  .mdc-text-field2{
+    margin-right:unset;
+  }
+  .check-btn{   
+    .mdc-button__label{
+      color: black;
+    }
+     padding: 14px 50px;}
+  
+}
+}
+
+.ninth-section{
+  background: #e5e5e5;
+  flex-direction:column;
+  align-content: flex-start;
+  padding-bottom: 2rem;
+  .text-desc{
+    align-self: flex-start;
+  }
+  .cust-section{
+    @include flexCenter(row,wrap);
+    margin-bottom: 3rem;
+    justify-content: space-between;
+  }
+  .cust-card{
+    text-align: center;
+    max-width: 380px;
+    margin:10px;
+    padding:1rem;
+    background:$whiteText;
+    border-radius: 20px;
+  .text-desc{ 
+    font-size:18px;
+    margin:1rem 0 2rem 0;
+    border-top: 1px solid $purpleColor;
+    padding-top: 2rem;
+    text-align: center;
+    color: #343434;
+  }
+  .loc-text{
+    color: #343434;
+    font-style: italic;
+  }
+  
+   }
+  .ratings{
+    margin: 1rem 0;
+    span{
+      color: $orangeColor;
+      margin: 4px;
+    }
+  }
+  .more-btn{
+    border-radius: 0;
+    padding: 24px 50px;
+    color: #ffffff;
+    margin: auto;
+    background: #353790;
+    text-transform: unset;
+    font-weight: bold;
+    font-size: 20px;
+  }
+}
+
+
 
   @media (min-width: 600px) {
     .mk-toolbar-nav {

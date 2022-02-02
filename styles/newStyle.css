@@ -1,3 +1,4 @@
+@use "@material/typography/mdc-typography";
 @use "@material/floating-label/mdc-floating-label";
 @use "@material/line-ripple/mdc-line-ripple";
 @use "@material/notched-outline/mdc-notched-outline";
@@ -310,11 +311,11 @@ header {
   font-weight: bold;
 }
 
-.quote-btn, .fifth-section .check-btn, .sixth-section .check-btn {
+.quote-btn, .fifth-section .check-btn, .sixth-section .check-btn, .eigth-section .check-btn {
   background-color: #F8991D;
 }
 
-.quote-btn span, .fifth-section .check-btn span, .sixth-section .check-btn span {
+.quote-btn span, .fifth-section .check-btn span, .sixth-section .check-btn span, .eigth-section .check-btn span {
   color: #ffffff;
   font-weight: bold;
 }
@@ -546,6 +547,7 @@ i {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  margin: 2rem 0;
 }
 
 .fourth-section {
@@ -596,7 +598,7 @@ i {
   font-size: 24px;
 }
 
-.fifth-section, .sixth-section {
+.fifth-section, .sixth-section, .eigth-section {
   background: -webkit-gradient(linear, left top, right top, from(#00000040), to(#00000040)), url("../images/typing.jpg") center;
   background: linear-gradient(to right, #00000040, #00000040), url("../images/typing.jpg") center;
   background-size: cover;
@@ -622,16 +624,16 @@ i {
   color: #ffffff;
 }
 
-.fifth-section .seo-div, .sixth-section .seo-div {
+.fifth-section .seo-div, .sixth-section .seo-div, .eigth-section .seo-div {
   width: 100%;
 }
 
-.fifth-section .mdc-title, .sixth-section .mdc-title {
+.fifth-section .mdc-title, .sixth-section .mdc-title, .eigth-section .mdc-title {
   font-size: 40px;
   text-shadow: 1px 2px 4px #00000036;
 }
 
-.fifth-section .check-btn, .sixth-section .check-btn {
+.fifth-section .check-btn, .sixth-section .check-btn, .eigth-section .check-btn {
   border-radius: 0;
   padding: 10px 50px;
   height: -webkit-max-content;
@@ -639,11 +641,11 @@ i {
   height: max-content;
 }
 
-.fifth-section .check-btn span, .sixth-section .check-btn span {
+.fifth-section .check-btn span, .sixth-section .check-btn span, .eigth-section .check-btn span {
   font-size: 20px;
 }
 
-.fifth-section .site-inputs, .sixth-section .site-inputs {
+.fifth-section .site-inputs, .sixth-section .site-inputs, .eigth-section .site-inputs {
   margin: 1rem auto;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -665,7 +667,7 @@ i {
           align-items: center;
 }
 
-.fifth-section .site-inputs .mdc-text-field, .sixth-section .site-inputs .mdc-text-field {
+.fifth-section .site-inputs .mdc-text-field, .sixth-section .site-inputs .mdc-text-field, .eigth-section .site-inputs .mdc-text-field {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -673,14 +675,14 @@ i {
   border-right: 1px solid black;
 }
 
-.fifth-section .site-inputs .mdc-text-field2, .sixth-section .site-inputs .mdc-text-field2 {
+.fifth-section .site-inputs .mdc-text-field2, .sixth-section .site-inputs .mdc-text-field2, .eigth-section .site-inputs .mdc-text-field2 {
   -webkit-box-flex: 0.6;
       -ms-flex-positive: 0.6;
           flex-grow: 0.6;
   border-radius: 0px 10px 10px 0px;
 }
 
-.fifth-section .text-desc, .sixth-section .text-desc {
+.fifth-section .text-desc, .sixth-section .text-desc, .eigth-section .text-desc {
   margin-bottom: 2rem;
 }
 
@@ -745,7 +747,7 @@ i {
 }
 
 .sixth-section .function-card {
-  max-width: 225px;
+  max-width: 224px;
   border-top: 2px solid white;
   border-right: 2px solid white;
   padding: 3rem 1rem;
@@ -801,7 +803,7 @@ i {
 
 .seventh-section .more-btn {
   border-radius: 0;
-  padding: 10px 50px;
+  padding: 24px 50px;
   color: #ffffff;
   margin: auto;
   background: #353790;
@@ -833,6 +835,110 @@ i {
 .seventh-section .orange-title i {
   margin-right: 4px;
   font-size: 36px;
+}
+
+.eigth-section {
+  background: url(../images/black-men-cafe-have-business.jpg) center;
+  background-size: cover;
+}
+
+.eigth-section .site-inputs .mdc-text-field, .eigth-section .site-inputs .mdc-text-field2 {
+  border-radius: 0;
+  margin-right: 6px;
+  border-right: unset;
+}
+
+.eigth-section .site-inputs .mdc-text-field2 {
+  margin-right: unset;
+}
+
+.eigth-section .site-inputs .check-btn {
+  padding: 14px 50px;
+}
+
+.eigth-section .site-inputs .check-btn .mdc-button__label {
+  color: black;
+}
+
+.ninth-section {
+  background: #e5e5e5;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  padding-bottom: 2rem;
+}
+
+.ninth-section .text-desc {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.ninth-section .cust-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ninth-section .cust-card {
+  text-align: center;
+  max-width: 380px;
+  margin: 10px;
+  padding: 1rem;
+  background: #ffffff;
+  border-radius: 20px;
+}
+
+.ninth-section .cust-card .text-desc {
+  font-size: 18px;
+  margin: 1rem 0 2rem 0;
+  border-top: 1px solid #353790;
+  padding-top: 2rem;
+  text-align: center;
+  color: #343434;
+}
+
+.ninth-section .cust-card .loc-text {
+  color: #343434;
+  font-style: italic;
+}
+
+.ninth-section .ratings {
+  margin: 1rem 0;
+}
+
+.ninth-section .ratings span {
+  color: #F8991D;
+  margin: 4px;
+}
+
+.ninth-section .more-btn {
+  border-radius: 0;
+  padding: 24px 50px;
+  color: #ffffff;
+  margin: auto;
+  background: #353790;
+  text-transform: unset;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 @media (min-width: 600px) {
